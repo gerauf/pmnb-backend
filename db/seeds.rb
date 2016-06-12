@@ -5,3 +5,19 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Iou.create([{
+  name:    'Daniel Ortiz',
+  event:   'Sleep over',
+  amount:   20,
+  contact: 'do@gmail.com',
+  date:    '',
+  status:  'pending'
+},
+{
+  name:    'Mara',
+  event:   'Huel party',
+  amount:   12,
+  contact: 'mw@gmail.com',
+  date:    '',
+  status:  'accepted'
+}])
