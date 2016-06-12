@@ -16,7 +16,7 @@ class IousController < ApplicationController
   private
 
   def iou_params
-    params.permit(:name, :event, :amount, :contact, :date, :status)
+    params.require(:params).require(:iou).permit(:name, :event, :amount, :contact, :date, :status)
   end
 
 

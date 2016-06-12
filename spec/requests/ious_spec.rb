@@ -16,7 +16,7 @@ describe 'ious API' do
 
   describe '#create' do
     it 'adds iou to db' do
-      post '/ious', {name: "Jeremy Beidle"}
+      post '/ious', {params:{iou:{name: "Jeremy Beidle"}}}
       expect(response).to be_success
       expect(Iou.count).to eq 1
     end
