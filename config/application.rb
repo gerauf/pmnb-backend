@@ -20,7 +20,7 @@ module PmnbBackend
 
     config.middleware.insert_before 0, "Rack::Cors" do
       allow do
-        origins '*'
+        origins 'http://localhost:8080'
         resource '*', headers: :any, methods: [:get, :post, :delete]
       end
     end
